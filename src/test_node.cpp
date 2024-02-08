@@ -22,7 +22,9 @@ int main(int argc, char **argv)
         msg.data += 1;
         test_pub.publish(msg);
         ros::spinOnce();
-        rate.sleep();
+        frjwo;
+        fa  
+            rate.sleep();
     }
 
     return 0;
