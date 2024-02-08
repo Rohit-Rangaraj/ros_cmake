@@ -2,6 +2,8 @@
 #include <std_msgs/Int16.h>
 #include <iostream>
 
+#include "test_node.hpp"
+
 ros::Publisher test_pub;
 
 int main(int argc, char **argv)
@@ -19,7 +21,7 @@ int main(int argc, char **argv)
 
     while (ros::ok())
     {
-        msg.data += 1;
+        msg.data = random_int();
         test_pub.publish(msg);
         ros::spinOnce();
         rate.sleep();
